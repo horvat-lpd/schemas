@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "elmType": "div",
+  "txtContent": "@currentField",
+  "attributes": {
+    "class": "=if(indexOf(@currentField, 'Global') != -1, 'ms-bgColor-success', if(indexOf(@currentField,'Local\nNot') != -1, 'ms-bgColor-error',if(indexOf(@currentField,'Local\nQ') != -1, 'ms-bgColor-themeLighter',''))"
+  }
+}
